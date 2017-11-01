@@ -14,14 +14,13 @@ def process_user_query(query_string):
 
     for t in set(query_string.split()):
         for i in t:
-            for s in lenguages.values():
+            for q,s in lenguages.items():
                 for y in s:
                     if i == y:
-                        m = lenguages.keys()
-                        m = ' '.join(m)
+                        m = q
                         break
                     else:
                         m = 'No lenguage detected'
     return str(m)
 
-#print(process_user_query('В ЮАР Нельсон Мандела также известен как Мадиба (одно из клановых имён народа коса)[26]. Самый пожилой и долгоживущий президент ЮАР: прожил 95 лет (на момент начала президентства — 76 лет, на момент окончания — 81).'))
+#print(process_user_query('نلسون رولیهلاهلا ماندلا (وه دی اومائه د ۲۶ تیر ۱۲۹۷ همبایی وا ۱۸ جوئیه ۱۹۱۸ - د دنیا رئته د ۱۴ آذر ۱۳۹۲ همبایی وا ۵ دسامر ۲۰۱۳) اولین سرکومره ولات افریقا هارگه ئه که د انتخاوات خلک سالار خلکمن انتخاوه بی'))
