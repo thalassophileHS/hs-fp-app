@@ -21,7 +21,7 @@ def process_user_query(query_string):
         'Wallon' : ['dji', 'nén', 'rén', 'bén', 'pol', 'ås', 'vs', 'ki', 'pô', 'èn', 'dj'],
         'English' : [ 'an', 'and', 'in', 'of', 'the', 'that', 'is', 'I'],
         'German' : [ 'der', 'die', 'dem', 'sie', 'ist', 'ich', 'aber'],
-        'Dutch' : ['het', 'op', 'en', 'een', 'voor'],
+        'Dutch' : ['het', 'op', 'een', 'voor'],
         'Afrikaans' : [ f'\'n', 'vir', 'nie'],
         'Swedish' : [ 'och', 'att', 'det', 'som', 'är'],
         'Danish' : ['af', 'til', 'med', 'det'],
