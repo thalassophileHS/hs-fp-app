@@ -59,7 +59,7 @@ def process_user_query(query_string):
                     if letter in ['ј', 'љ', 'њ','џ', 'ђ', 'ћ']:
                         m = 'Serbian'
                         return m
-                    elif letter in ['ё', 'i']:
+                    elif letter in ['i']:
                         m = 'Belarussian'
                         return m
                     else:
