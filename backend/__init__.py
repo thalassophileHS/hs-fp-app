@@ -13,11 +13,11 @@ def process_user_query(query_string):
         'Tamil' : 'அஆஇஈஉஊஎஏஐஒஓஔகஙசஞடணதநபமய'
     }
     leng = {
-        'French' : ['le', 'il'],
+        'French' : ['le', 'il', 'est'],
         'Spanish' : ['los', 'las', 'unos', 'unas', 'y'],
         'Romanian' : ['și', 'în', 'între', 'cea', 'au'],
         'Italina' : ['è', 'di', 'con', 'per'],
-        'Portuguese' : [ 'à', 'e', 'é', 'às', 'em', 'são', 'mas', 'que'],
+        'Portuguese' : [ 'à', 'e', 'às', 'em', 'são', 'mas', 'que'],
         'Wallon' : ['dji', 'nén', 'rén', 'bén', 'pol', 'ås', 'vs', 'ki', 'pô', 'èn', 'dj'],
         'English' : [ 'an', 'and', 'in', 'of', 'the', 'that', 'is', 'I'],
         'German' : [ 'der', 'die', 'dem', 'sie', 'ist', 'ich', 'aber'],
