@@ -30,7 +30,7 @@ def process_user_query(query_string):
         'Latvian' : ['bija', 'tika', 'viņš'],
         'Lithuanian' : ['yra', 'kad'],
         'Polish' : [ 'w', 'jest', 'się'],
-        'Czech' : ['z', 'k', 'až', 'však'],
+        'Czech' : ['z', 'k', 'až', 'však', 'jenž', 'ní'],
         'Slovak' : [ 'yr', 'ac'],
         'Turkish' : ['bir', 'bu', 'fakat', 'oldu', 'şu'],
         'Welsh' : ['yr', 'ac'],
