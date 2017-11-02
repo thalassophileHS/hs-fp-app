@@ -43,7 +43,6 @@ def process_user_query(query_string):
                 for char in value:
                     if letter == char:
                         m = key
-                        return m
     if m == 'Latin':
         for word in query_string.split():
             for key, value in leng.items():
@@ -65,3 +64,4 @@ def process_user_query(query_string):
                     else:
                         m = 'Russian'
                         return m
+    return m
