@@ -53,10 +53,12 @@ def process_user_query(query_string):
         for word in query_string.split():
             if word == 'със':
                 m = 'Bulgarian'
-            for letter in word:
-                if letter in ['ј', 'љ', 'њ','џ', 'ђ', 'ћ']:
-                    m = 'Serbian'
-                else:
-                    m = 'Russian'
+            else:
+                for letter in word:
+                    if letter in ['ј', 'љ', 'њ','џ', 'ђ', 'ћ']:
+                        m = 'Serbian'
+                        break
+                    else:
+                        m = 'Russian'
 
     return m
