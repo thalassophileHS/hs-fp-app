@@ -48,7 +48,7 @@ def process_user_query(query_string):
             for key, value in leng.items():
                 if word in value:
                     m = key
-                    return m
+                    #return m
     if m == 'Slavic':
         for word in query_string.split():
             if word == 'със':
