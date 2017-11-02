@@ -3,7 +3,7 @@ def process_user_query(query_string):
         'Slavic' : 'БГДЁЖЗИЙЛФЦЧШЩЪЫЬЭЮЯ',
         'Armenian' : 'ԱԲԳԴԵԶԷԸԹԺԻԼԽԾԿՀՁՂՃՄՅՆՇՈՉՊՋՌՍՎՏՐՑՒՓՔՕՖ',
         'Georgian' : 'აბგდევზჱთიკლმნჲოპჟრსტჳუფქღყშჩცძწჭხჴჯჰჵჶჷჸ',
-        'Latin' : 'DFGJLQRSTVWZ'.lower(),
+        'Latin' : 'DFGJLQRSTVWZ',
         'Chinese' : '诶比西迪伊弗吉尺杰开勒马娜哦屁吉吾儿艾丝提伊吾维豆贝尔维克斯吾贼德',
         'Japanese' : 'あいうえおかきくけこがぎぐげごさしすせそざじずぜぞたちつてとだぢづでどなにぬねのはひふへほばびぶべぼぱぴぷぺぽまみむめもやゆよらりるれろわをん',
         'Korean' : 'ㅂㄷㅈㄱㅃㄸㅉㄲㅍㅌㅊㅋㅅㅎㅆㅁㄴㅇㄹㅣㅔㅚㅐㅏㅗㅜㅓㅡㅢㅖㅒㅑㅛㅠㅕㅟㅞㅙㅘㅝ',
@@ -37,7 +37,7 @@ def process_user_query(query_string):
         'Estonian' : ['või'],
         'Hungarian' : ['az', 'ez', 'egy', 'hogy']
     }
-    for word in set(query_string.split().lower()):
+    for word in set(query_string.split()):
         for letter in word:
             for key,value in lenguages_char.items():
                 for char in value:
@@ -48,6 +48,7 @@ def process_user_query(query_string):
             for key, value in leng.items():
                 if word in value:
                     m = key
+                    return m
     if m == 'Slavic':
         for word in query_string.split():
             if word == 'със':
@@ -63,5 +64,5 @@ def process_user_query(query_string):
                         return m
                     else:
                         m = 'Russian'
-                        return m
+                        #return m
     return m
